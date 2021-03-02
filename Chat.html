@@ -1,0 +1,82 @@
+<html> 
+<head> 
+<meta charset='uft-8'> 
+<script> 
+function createXHR() { 
+//создаем сам объект 
+xhr = new XMLHttpRequest(); 
+//открываем его 
+xhr.open('POST', 'server.php', true); 
+//создаем заголовок объекта 
+xhr.setRequestHeader('Content-type', 'application/x-www-from-urlencoded'); 
+} 
+//функция для клиента 1 
+function send1() { 
+createXHR(); //создаем объект для передачи сообщений 
+//создаем данные для передачи 
+var data = 'text='+document.getElementById('text1').value; 
+//создаем функцию приема сообщения 
+xhr.onreadystatechange = function () { 
+//если сообщение пришло без ошибок 
+if (xhr.readyState == 4 & xhr.status == 200) { 
+//то выводим его 
+document.getElementById('client2').innerHTML = xhr.responseText; 
+console.log(xhr.responseText); 
+} 
+} 
+//отправляем данные 
+xhr.send(data); 
+} 
+//функция для клиента 2, работает аналогично 
+function send2() { 
+createXHR(); 
+var data = 'text='+document.getElementById('text2').value; 
+xhr.onreadystatechange = function () { 
+if (xhr.readyState == 4 & xhr.status == 200) { 
+document.getElementById('client2').innerHTML = xhr.responseText; 
+console.log(xhr.responseText); 
+} 
+} 
+xhr.send(data); 
+} 
+</script> 
+<style> 
+* { 
+margin: 0; 
+padding: 0; 
+} 
+.container { 
+float: left; 
+width: 250px; 
+height: 300px; 
+border: solid 1px black; 
+} 
+#client1, #client2 { 
+height: 240px; 
+} 
+#text1, #text2 { 
+height: 30px; 
+width: 250px; 
+} 
+button{ 
+height:30px; 
+width: 250px; 
+} 
+</style> 
+</head> 
+<body> 
+<div class='container'> 
+<div id='client1'> 
+</div> 
+<textarea id='text1'></textarea> 
+<button onclick='send1()'>отправить</button> 
+</div> 
+
+<div class='container'> 
+<div id='client2'> 
+</div> 
+<textarea id='text2'></textarea> 
+<button onclick='send2()'>отправить</button> 
+</div> 
+</body> 
+</html>
