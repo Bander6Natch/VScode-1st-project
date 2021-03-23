@@ -1,12 +1,12 @@
 <html>
  <head>
     <meta charset="UTF­8">
-    <title>Main page</title>
+    <title>Contacts</title>
 
     <script>
         function first(){
         var a= document.getElementById("text").value;
-        alert('I♥HTML');
+        alert('Сообщение отправленно');
         }
         </script>
  </head>
@@ -19,14 +19,13 @@
    <li><p><a href="Contacts.html">Контакты</a></li>
   </ul>
   <hr>
-
-    <h2>Напишите нам</h2>
-    <input tupe='text' name='name'><a>Ваше имя</a><br>
-    <input tupe='email' name='email'><a>Ваша электронная почта</a><br> 
-    <input tupe='text' name='topic'><a>Тема сообщения</a><br>
-    <input type='text' name='text field'><a>Вашb предожения</a><br>
-
+    <fieldset> <legend> <h2>Напишите нам</h2> </legend>
+    <input tupe='text' name='name'placeholder="Ваше имя" ><br>
+    <input tupe='email' name='email' placeholder="Ваша электронная почта"><br> 
+    <input tupe='text' name='topic' placeholder="Тема сообщения"><br>
+    <textarea>Ваше предложение</textarea><br>
     <div><p> <input type="button" value='Отправить' id='text' onclick="first()" ></p> </div>
+    </fieldset>
 
     <h2>Адрес</h2>
     <a>Наш номер: 8-800-555-3535 
