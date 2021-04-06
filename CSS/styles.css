@@ -1,0 +1,77 @@
+/* меню сайта */
+body {
+        background-color: #f8f8f8;
+}
+.menu_main {
+    color: rgb(35, 185, 223);
+    font-size: 20px;
+    font-style: normal;
+    font-family: serif;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
+.menu_catalog{
+    color: #c736eb;
+    font-size: 35px;
+    font-style: italic;
+    font-family: sans-serif;
+    line-height: 6px;
+}
+.menu_contacts{
+    color: #2d4edd;
+    font-size: 45px;
+    font-style: oblique;
+    font-family: monospace;
+    line-height: 49px;
+}
+
+#head_menu{
+font-family: fantasy;
+font-size: 25; 
+}
+
+/* Страница «Подробное описание товара» */
+
+.discription{
+    color: black;
+    font-size: 18px;
+    font-weight: 400;
+    background-color: #dfdfdf
+}
+
+.shortdiscription{
+    color: #484343;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+}
+
+.features{
+    color: #4b2e02;
+    font-size: 13px;
+    font-weight: 700;
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 24px;
+}
+
+/* Страница «Контакты» */
+
+.enterfields {
+    height: 70px;
+    width: 300px;
+    }
+    
+input[placeholder]{
+    color: #5e1754;
+    font-size: 14px;
+    font-weight: 300;
+    font-style: italic;
+}
+
+textarea[placeholder]{
+    color: #5e1754;
+    font-size: 14px;
+    font-weight: 300;
+    font-style: italic;
+}
