@@ -24,10 +24,15 @@ body {
     font-family: monospace;
     line-height: 35px;
 }
+a {
+    text-decoration: none;
+}
 
-#head_menu{
+.head_menu{
 font-family: fantasy;
-font-size: 25; 
+font-size: 25;
+color:#8b1000;
+letter-spacing: 3px;
 }
 
 /* Страница «Подробное описание товара» */
@@ -86,3 +91,82 @@ input[type='text']:focus{
   text-transform: capitalize;
 }
 
+/* 5 лаба меню сайта */
+
+.container{
+    width: 800px;
+}
+
+.header{
+    height: auto;
+}
+
+.logo{
+    right: -100px;
+    float: left;
+    left:50;
+}
+
+.firstwords {
+    text-align: center;
+}
+.one li{
+    display: inline-block;
+    padding: 1em;
+}
+
+.one{
+    position: flex;
+    text-align: right;
+    left: 900
+}
+
+.one a{
+        text-decoration: none;
+        display: block;
+        position: relative;
+        line-height: 61px;
+        padding-left: 20px;
+        font-size: 18px;
+        font-family: 'Arimo', sans-serif;
+        font-weight: bold;
+        color: #F73E24;
+        transition:.3s linear;
+
+}
+
+.footer{
+position: flex;
+text-align: right;
+height: 75px;
+background-color: blanchedalmond;
+}
+
+.f{
+    padding: 10px;
+    padding-right: 20px;
+}
+
+input[type='button']:focus{
+    background-color: rgb(229, 255, 0);
+    color:rgb(20, 36, 0)
+    
+}
+
+.button{
+    margin-left: 20px;
+}
+.button:hover {
+    background-color : red;
+}
+
+.block{
+    position: flex;
+    text-align: center
+}
+
+.block li{
+    display: inline-block;
+    padding: 3em;
+
+}
