@@ -44,12 +44,21 @@ letter-spacing: 3px;
     background-color: #dfdfdf
 }
 
+.feats{
+    color: black;
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 20%;
+    background-color: #dfdfdf
+}
+
 .shortdiscription{
     color: #484343;
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
     text-align: left;
+    margin-left: 19%; 
 }
 
 .features{
@@ -154,7 +163,7 @@ input[type='button']:focus{
 }
 
 .button{
-    margin-left: 20px;
+    margin-left: 40px;
 }
 .button:hover {
     background-color : red;
